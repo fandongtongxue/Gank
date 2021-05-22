@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04CC11B02658F3E9005B87D1 /* GankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC11AF2658F3E9005B87D1 /* GankApp.swift */; };
+		04CC11B22658F3E9005B87D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC11B12658F3E9005B87D1 /* ContentView.swift */; };
+		04CC11B42658F3ED005B87D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CC11B32658F3ED005B87D1 /* Assets.xcassets */; };
+		04CC11B72658F3ED005B87D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CC11B62658F3ED005B87D1 /* Preview Assets.xcassets */; };
+		04CC11C22658F64D005B87D1 /* HotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC11C12658F64D005B87D1 /* HotView.swift */; };
+		04CC11C42658F65E005B87D1 /* HotListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC11C32658F65E005B87D1 /* HotListView.swift */; };
+		04CC11C62658F697005B87D1 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC11C52658F697005B87D1 /* ModelData.swift */; };
+		04CC11C82658F6B9005B87D1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC11C72658F6B9005B87D1 /* Article.swift */; };
+		04CC11CA2658F6E2005B87D1 /* girls.json in Resources */ = {isa = PBXBuildFile; fileRef = 04CC11C92658F6E2005B87D1 /* girls.json */; };
+		04CC11CC2658F939005B87D1 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC11CB2658F939005B87D1 /* ArticleDetailView.swift */; };
+		269FF0E7E98AC1A97E6E9283 /* Pods_Gank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2625374E8BD90FA2D0A4A90C /* Pods_Gank.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04CC11AC2658F3E9005B87D1 /* Gank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CC11AF2658F3E9005B87D1 /* GankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GankApp.swift; sourceTree = "<group>"; };
+		04CC11B12658F3E9005B87D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04CC11B32658F3ED005B87D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04CC11B62658F3ED005B87D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04CC11B82658F3ED005B87D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CC11BE2658F3F4005B87D1 /* Gank.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gank.entitlements; sourceTree = "<group>"; };
+		04CC11C12658F64D005B87D1 /* HotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotView.swift; sourceTree = "<group>"; };
+		04CC11C32658F65E005B87D1 /* HotListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotListView.swift; sourceTree = "<group>"; };
+		04CC11C52658F697005B87D1 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		04CC11C72658F6B9005B87D1 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		04CC11C92658F6E2005B87D1 /* girls.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = girls.json; sourceTree = "<group>"; };
+		04CC11CB2658F939005B87D1 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		09E49E208F5F760C16D59E12 /* Pods-Gank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank.release.xcconfig"; path = "Target Support Files/Pods-Gank/Pods-Gank.release.xcconfig"; sourceTree = "<group>"; };
+		2625374E8BD90FA2D0A4A90C /* Pods_Gank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26A0DC86C12AD82FF5D65F89 /* Pods-Gank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank.debug.xcconfig"; path = "Target Support Files/Pods-Gank/Pods-Gank.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04CC11A92658F3E9005B87D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269FF0E7E98AC1A97E6E9283 /* Pods_Gank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04CC11A32658F3E9005B87D1 = {
+			isa = PBXGroup;
+			children = (
+				04CC11AE2658F3E9005B87D1 /* Gank */,
+				04CC11AD2658F3E9005B87D1 /* Products */,
+				C2B894CC3273FDA1BB463273 /* Pods */,
+				D087FFC8F2A60CDB98ADBF90 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04CC11AD2658F3E9005B87D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04CC11AC2658F3E9005B87D1 /* Gank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04CC11AE2658F3E9005B87D1 /* Gank */ = {
+			isa = PBXGroup;
+			children = (
+				04CC11BE2658F3F4005B87D1 /* Gank.entitlements */,
+				04CC11AF2658F3E9005B87D1 /* GankApp.swift */,
+				04CC11B12658F3E9005B87D1 /* ContentView.swift */,
+				04CC11B32658F3ED005B87D1 /* Assets.xcassets */,
+				04CC11B82658F3ED005B87D1 /* Info.plist */,
+				04CC11B52658F3ED005B87D1 /* Preview Content */,
+				04CC11C12658F64D005B87D1 /* HotView.swift */,
+				04CC11C32658F65E005B87D1 /* HotListView.swift */,
+				04CC11C52658F697005B87D1 /* ModelData.swift */,
+				04CC11C72658F6B9005B87D1 /* Article.swift */,
+				04CC11C92658F6E2005B87D1 /* girls.json */,
+				04CC11CB2658F939005B87D1 /* ArticleDetailView.swift */,
+			);
+			path = Gank;
+			sourceTree = "<group>";
+		};
+		04CC11B52658F3ED005B87D1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04CC11B62658F3ED005B87D1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2B894CC3273FDA1BB463273 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26A0DC86C12AD82FF5D65F89 /* Pods-Gank.debug.xcconfig */,
+				09E49E208F5F760C16D59E12 /* Pods-Gank.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D087FFC8F2A60CDB98ADBF90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2625374E8BD90FA2D0A4A90C /* Pods_Gank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04CC11AB2658F3E9005B87D1 /* Gank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CC11BB2658F3ED005B87D1 /* Build configuration list for PBXNativeTarget "Gank" */;
+			buildPhases = (
+				F7633F4B4B1FF8AF48725A83 /* [CP] Check Pods Manifest.lock */,
+				04CC11A82658F3E9005B87D1 /* Sources */,
+				04CC11A92658F3E9005B87D1 /* Frameworks */,
+				04CC11AA2658F3E9005B87D1 /* Resources */,
+				E453428BBAE595D7B537EBAC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gank;
+			productName = Gank;
+			productReference = 04CC11AC2658F3E9005B87D1 /* Gank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04CC11A42658F3E9005B87D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					04CC11AB2658F3E9005B87D1 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 04CC11A72658F3E9005B87D1 /* Build configuration list for PBXProject "Gank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04CC11A32658F3E9005B87D1;
+			productRefGroup = 04CC11AD2658F3E9005B87D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04CC11AB2658F3E9005B87D1 /* Gank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04CC11AA2658F3E9005B87D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CC11B72658F3ED005B87D1 /* Preview Assets.xcassets in Resources */,
+				04CC11B42658F3ED005B87D1 /* Assets.xcassets in Resources */,
+				04CC11CA2658F6E2005B87D1 /* girls.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E453428BBAE595D7B537EBAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gank/Pods-Gank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gank/Pods-Gank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gank/Pods-Gank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7633F4B4B1FF8AF48725A83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CC11A82658F3E9005B87D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CC11B22658F3E9005B87D1 /* ContentView.swift in Sources */,
+				04CC11B02658F3E9005B87D1 /* GankApp.swift in Sources */,
+				04CC11C82658F6B9005B87D1 /* Article.swift in Sources */,
+				04CC11CC2658F939005B87D1 /* ArticleDetailView.swift in Sources */,
+				04CC11C62658F697005B87D1 /* ModelData.swift in Sources */,
+				04CC11C22658F64D005B87D1 /* HotView.swift in Sources */,
+				04CC11C42658F65E005B87D1 /* HotListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04CC11B92658F3ED005B87D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04CC11BA2658F3ED005B87D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04CC11BC2658F3ED005B87D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A0DC86C12AD82FF5D65F89 /* Pods-Gank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Gank/Gank.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Gank/Preview Content\"";
+				DEVELOPMENT_TEAM = 37R27U9WSN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Gank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.fandong.Gank1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04CC11BD2658F3ED005B87D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E49E208F5F760C16D59E12 /* Pods-Gank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Gank/Gank.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Gank/Preview Content\"";
+				DEVELOPMENT_TEAM = 37R27U9WSN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Gank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.fandong.Gank1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04CC11A72658F3E9005B87D1 /* Build configuration list for PBXProject "Gank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CC11B92658F3ED005B87D1 /* Debug */,
+				04CC11BA2658F3ED005B87D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CC11BB2658F3ED005B87D1 /* Build configuration list for PBXNativeTarget "Gank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CC11BC2658F3ED005B87D1 /* Debug */,
+				04CC11BD2658F3ED005B87D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04CC11A42658F3E9005B87D1 /* Project object */;
+}
