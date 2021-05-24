@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct GirlListView: View {
     @State var girls = [Article]()
@@ -13,10 +14,17 @@ struct GirlListView: View {
         NavigationView{
             List(girls){ article in
                 NavigationLink(
-                    destination: WebView(url: article.url),
+                    destination: GirlDetailView(article: article),
                     label: {
-                        Text(article.category+article.title)
-                    })
+                        HStack{
+                            Text(article.category+" "+article.title)
+                            WebImage(url: URL(string: article.images.first ?? ""))
+                                .resizable()
+                                .indicator(.activity)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100 * 16 / 9, height: 100, alignment: .trailing)
+                        }
+                    }).frame(height: 100)
             }
             .navigationTitle("妹纸")
         }
