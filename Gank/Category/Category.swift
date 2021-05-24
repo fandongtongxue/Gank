@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Category: Hashable, Codable, Identifiable {
-    var id : Int
-    var _id : String
-    var desc : String
-    var coverImageUrl : String
-    var title : String
-    var type : String
+class Category: BaseModel, Identifiable, Decodable {
+    var id = 0
+    var _id = ""
+    var desc = ""
+    var coverImageUrl = ""
+    var title = ""
+    var type = ""
 }

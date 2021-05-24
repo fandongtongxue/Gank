@@ -17,6 +17,6 @@ struct ArticleDetailView: View {
 
 struct ArticleDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleDetailView(article: articles_ios[0])
+        ArticleDetailView(article: demo_articles_ios[0])
     }
 }

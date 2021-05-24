@@ -7,5 +7,8 @@ target 'Gank' do
 
   # Pods for Gank
   pod 'SDWebImageSwiftUI'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'HandyJSON'
 
 end

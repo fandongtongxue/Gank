@@ -6,10 +6,9 @@
 //
 
 import Foundation
-
-struct Banner: Hashable, Codable, Identifiable {
-    var id : Int
-    var url : String
-    var image : String
-    var title : String
+class Banner: BaseModel, Decodable, Identifiable {
+    var id = 0
+    var url = ""
+    var image = ""
+    var title = ""
 }

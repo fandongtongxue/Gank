@@ -7,19 +7,19 @@
 
 import Foundation
 
-struct Article: Hashable, Codable, Identifiable {
-    var id : Int
-    var _id : String
-    var author : String
-    var category : String
-    var createdAt : String
-    var desc : String
-    var images : [String]
-    var likeCounts : Int
-    var publishedAt : String
-    var stars : Int
-    var title : String
-    var type : String
-    var url : String
-    var views : Int
+class Article: BaseModel, Decodable, Identifiable {
+    var id = 0
+    var _id = ""
+    var author = ""
+    var category = ""
+    var createdAt = ""
+    var desc = ""
+    var images = [String]()
+    var likeCounts = 0
+    var publishedAt = ""
+    var stars = 0
+    var title = ""
+    var type = ""
+    var url = ""
+    var views = 0
 }

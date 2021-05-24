@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CategoryListView: View {
+    @State var categorys = [Category]()
     var body: some View {
         NavigationView{
             List(categorys){ category in
@@ -18,6 +19,18 @@ struct CategoryListView: View {
                     })
             }
             .navigationTitle("分类")
+            .onAppear(perform: {
+                FDNetwork.GET(url: "https://gank.io/api/v2/categories/Article", param: nil) { response in
+                    let responseModel = BaseResponseModel.deserialize(from: response) ?? BaseResponseModel()
+                    categorys.removeAll()
+                    for dict in responseModel.data {
+                        let model = Category.deserialize(from: dict)
+                        categorys.append(model ?? Category())
+                    }
+                } failure: { error in
+                    debugPrint(error)
+                }
+            })
         }
     }
 }

@@ -33,6 +33,9 @@
 		04EF60B6265B51DF00302922 /* HotBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60B4265B51DF00302922 /* HotBannerViewModel.swift */; };
 		04EF60BC265B54DF00302922 /* HotListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60BB265B54DF00302922 /* HotListView.swift */; };
 		04EF60BE265B558F00302922 /* hots.json in Resources */ = {isa = PBXBuildFile; fileRef = 04EF60BD265B558F00302922 /* hots.json */; };
+		04EF60C0265B73F600302922 /* FDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60BF265B73F600302922 /* FDNetwork.swift */; };
+		04EF60C2265B74D300302922 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60C1265B74D300302922 /* BaseModel.swift */; };
+		04EF60C4265B766500302922 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60C3265B766500302922 /* BaseResponseModel.swift */; };
 		269FF0E7E98AC1A97E6E9283 /* Pods_Gank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2625374E8BD90FA2D0A4A90C /* Pods_Gank.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		04EF60B4265B51DF00302922 /* HotBannerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotBannerViewModel.swift; sourceTree = "<group>"; };
 		04EF60BB265B54DF00302922 /* HotListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotListView.swift; sourceTree = "<group>"; };
 		04EF60BD265B558F00302922 /* hots.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hots.json; sourceTree = "<group>"; };
+		04EF60BF265B73F600302922 /* FDNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDNetwork.swift; sourceTree = "<group>"; };
+		04EF60C1265B74D300302922 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		04EF60C3265B766500302922 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
 		09E49E208F5F760C16D59E12 /* Pods-Gank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank.release.xcconfig"; path = "Target Support Files/Pods-Gank/Pods-Gank.release.xcconfig"; sourceTree = "<group>"; };
 		2625374E8BD90FA2D0A4A90C /* Pods_Gank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A0DC86C12AD82FF5D65F89 /* Pods-Gank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank.debug.xcconfig"; path = "Target Support Files/Pods-Gank/Pods-Gank.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +121,9 @@
 				04CC11B32658F3ED005B87D1 /* Assets.xcassets */,
 				04CC11B82658F3ED005B87D1 /* Info.plist */,
 				04CC11B52658F3ED005B87D1 /* Preview Content */,
+				04EF60BF265B73F600302922 /* FDNetwork.swift */,
+				04EF60C1265B74D300302922 /* BaseModel.swift */,
+				04EF60C3265B766500302922 /* BaseResponseModel.swift */,
 			);
 			path = Gank;
 			sourceTree = "<group>";
@@ -313,12 +322,14 @@
 			files = (
 				04EF6096265B38C000302922 /* CGFloat+FD.swift in Sources */,
 				04CC11B22658F3E9005B87D1 /* ContentView.swift in Sources */,
+				04EF60C0265B73F600302922 /* FDNetwork.swift in Sources */,
 				04EF609E265B42CB00302922 /* CategoryDetailView.swift in Sources */,
 				04CC11B02658F3E9005B87D1 /* GankApp.swift in Sources */,
 				04CC11C82658F6B9005B87D1 /* Article.swift in Sources */,
 				04EF60A8265B466D00302922 /* HotView.swift in Sources */,
 				04EF60A4265B447300302922 /* ArticleListView.swift in Sources */,
 				04EF609C265B420F00302922 /* CategoryListView.swift in Sources */,
+				04EF60C2265B74D300302922 /* BaseModel.swift in Sources */,
 				04EF60B6265B51DF00302922 /* HotBannerViewModel.swift in Sources */,
 				04CC11CC2658F939005B87D1 /* GirlDetailView.swift in Sources */,
 				04CC11C62658F697005B87D1 /* ModelData.swift in Sources */,
@@ -330,6 +341,7 @@
 				04CC11C42658F65E005B87D1 /* GirlListView.swift in Sources */,
 				04EF609A265B41FA00302922 /* CategoryView.swift in Sources */,
 				04EF60A0265B42E300302922 /* Category.swift in Sources */,
+				04EF60C4265B766500302922 /* BaseResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,11 +19,12 @@ struct GirlDetailView: View {
                     .transition(.fade(duration: 0.5)) // Fade Transition with duration
                     .scaledToFit()
         }
+        .navigationTitle(article.title)
     }
 }
 
 struct GirlDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        GirlDetailView(article: girls[0])
+        GirlDetailView(article: demo_girls[0])
     }
 }
