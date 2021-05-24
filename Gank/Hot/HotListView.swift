@@ -12,7 +12,7 @@ struct HotListView: View {
     var body: some View {
         List(hots){ article in
             NavigationLink(
-                destination: ArticleDetailView(article: article),
+                destination: WebView(url: article.url),
                 label: {
                     Text(article.title)
                 })

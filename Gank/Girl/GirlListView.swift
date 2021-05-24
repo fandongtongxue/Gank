@@ -13,7 +13,7 @@ struct GirlListView: View {
         NavigationView{
             List(girls){ article in
                 NavigationLink(
-                    destination: GirlDetailView(article: article),
+                    destination: WebView(url: article.url),
                     label: {
                         Text(article.category+article.title)
                     })

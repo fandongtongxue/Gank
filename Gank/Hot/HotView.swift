@@ -9,11 +9,14 @@ import SwiftUI
 
 struct HotView: View {
     @State var bannerViewModel = HotBannerViewModel()
+    @State var isLoadFinish = false
     var body: some View {
         NavigationView{
             VStack{
-                HotBannerView()
-                    .environmentObject(bannerViewModel)
+                if isLoadFinish {
+                    HotBannerView()
+                        .environmentObject(bannerViewModel)
+                }
                 HotListView()
             }.navigationTitle("热门")
             .onAppear(perform: {
@@ -27,6 +30,7 @@ struct HotView: View {
                     }
                     tempModel.homeBannerArray = [banners.last!] + banners + [banners.first!]
                     bannerViewModel = tempModel
+                    isLoadFinish = true
                 } failure: { error in
                     debugPrint(error)
                 }

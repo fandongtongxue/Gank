@@ -36,6 +36,7 @@
 		04EF60C0265B73F600302922 /* FDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60BF265B73F600302922 /* FDNetwork.swift */; };
 		04EF60C2265B74D300302922 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60C1265B74D300302922 /* BaseModel.swift */; };
 		04EF60C4265B766500302922 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60C3265B766500302922 /* BaseResponseModel.swift */; };
+		04EF60C6265B94B500302922 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60C5265B94B500302922 /* WebView.swift */; };
 		269FF0E7E98AC1A97E6E9283 /* Pods_Gank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2625374E8BD90FA2D0A4A90C /* Pods_Gank.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		04EF60BF265B73F600302922 /* FDNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDNetwork.swift; sourceTree = "<group>"; };
 		04EF60C1265B74D300302922 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		04EF60C3265B766500302922 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
+		04EF60C5265B94B500302922 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		09E49E208F5F760C16D59E12 /* Pods-Gank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank.release.xcconfig"; path = "Target Support Files/Pods-Gank/Pods-Gank.release.xcconfig"; sourceTree = "<group>"; };
 		2625374E8BD90FA2D0A4A90C /* Pods_Gank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A0DC86C12AD82FF5D65F89 /* Pods-Gank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank.debug.xcconfig"; path = "Target Support Files/Pods-Gank/Pods-Gank.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				04EF60BF265B73F600302922 /* FDNetwork.swift */,
 				04EF60C1265B74D300302922 /* BaseModel.swift */,
 				04EF60C3265B766500302922 /* BaseResponseModel.swift */,
+				04EF60C5265B94B500302922 /* WebView.swift */,
 			);
 			path = Gank;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04EF6096265B38C000302922 /* CGFloat+FD.swift in Sources */,
+				04EF60C6265B94B500302922 /* WebView.swift in Sources */,
 				04CC11B22658F3E9005B87D1 /* ContentView.swift in Sources */,
 				04EF60C0265B73F600302922 /* FDNetwork.swift in Sources */,
 				04EF609E265B42CB00302922 /* CategoryDetailView.swift in Sources */,

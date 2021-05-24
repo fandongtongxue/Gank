@@ -52,8 +52,7 @@ struct HotBannerView: View {
                         .frame(width: geometry.size.width,
                                height: $0 == currentIndex ? geometry.size.height:geometry.size.height*0.8 )
                         .clipped() /// 裁减
-                        .cornerRadius(10)
-                            
+                        .cornerRadius(10)                            
                 }
             }.frame(width:geometry.size.width,
                    height:geometry.size.height,alignment:.leading)
@@ -83,7 +82,7 @@ struct HotBannerView: View {
              })
             
         }).frame(width: viewModel.homeBannerWidth,
-                height: viewModel.homeBannerHeight)
+                 height: viewModel.homeBannerHeight)
     }
 }
 
