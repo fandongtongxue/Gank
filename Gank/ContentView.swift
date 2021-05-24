@@ -11,10 +11,22 @@ struct ContentView: View {
     var body: some View {
         TabView{
             HotView()
-                .navigationViewStyle(StackNavigationViewStyle())
+                .navigationViewStyle(DoubleColumnNavigationViewStyle())
                 .tabItem {
-                    Image(systemName: "thermometer.sun")
-                    Text("最热")
+                    Image(systemName: "livephoto")
+                    Text("热门")
+                }
+            CategoryView()
+                .navigationViewStyle(DoubleColumnNavigationViewStyle())
+                .tabItem {
+                    Image(systemName: "list.triangle")
+                    Text("分类")
+                }
+            GirlView()
+                .navigationViewStyle(DoubleColumnNavigationViewStyle())
+                .tabItem {
+                    Image(systemName: "person.3.fill")
+                    Text("妹纸")
                 }
         }
     }

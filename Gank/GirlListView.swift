@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-struct HotListView: View {
+struct GirlListView: View {
     var body: some View {
         NavigationView{
             List(girls){ article in
                 NavigationLink(
-                    destination: ArticleDetailView(article: article),
+                    destination: GirlDetailView(article: article),
                     label: {
                         Text(article.category+article.title)
                     })
             }
-            .navigationTitle("最热")
+            .navigationTitle("妹纸")
         }
     }
 }
 
-struct HotList_Previews: PreviewProvider {
+struct GirlList_Previews: PreviewProvider {
     static var previews: some View {
-        HotListView()
+        GirlListView()
     }
 }
