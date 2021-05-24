@@ -27,6 +27,12 @@
 		04EF60A4265B447300302922 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60A3265B447300302922 /* ArticleListView.swift */; };
 		04EF60A6265B447F00302922 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60A5265B447F00302922 /* ArticleDetailView.swift */; };
 		04EF60A8265B466D00302922 /* HotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60A7265B466D00302922 /* HotView.swift */; };
+		04EF60AE265B4A9100302922 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60AD265B4A9100302922 /* Banner.swift */; };
+		04EF60B2265B4D8000302922 /* banners.json in Resources */ = {isa = PBXBuildFile; fileRef = 04EF60B1265B4D8000302922 /* banners.json */; };
+		04EF60B5265B51DF00302922 /* HotBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60B3265B51DF00302922 /* HotBannerView.swift */; };
+		04EF60B6265B51DF00302922 /* HotBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60B4265B51DF00302922 /* HotBannerViewModel.swift */; };
+		04EF60BC265B54DF00302922 /* HotListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF60BB265B54DF00302922 /* HotListView.swift */; };
+		04EF60BE265B558F00302922 /* hots.json in Resources */ = {isa = PBXBuildFile; fileRef = 04EF60BD265B558F00302922 /* hots.json */; };
 		269FF0E7E98AC1A97E6E9283 /* Pods_Gank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2625374E8BD90FA2D0A4A90C /* Pods_Gank.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +60,12 @@
 		04EF60A3265B447300302922 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		04EF60A5265B447F00302922 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		04EF60A7265B466D00302922 /* HotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotView.swift; sourceTree = "<group>"; };
+		04EF60AD265B4A9100302922 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		04EF60B1265B4D8000302922 /* banners.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = banners.json; sourceTree = "<group>"; };
+		04EF60B3265B51DF00302922 /* HotBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotBannerView.swift; sourceTree = "<group>"; };
+		04EF60B4265B51DF00302922 /* HotBannerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotBannerViewModel.swift; sourceTree = "<group>"; };
+		04EF60BB265B54DF00302922 /* HotListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotListView.swift; sourceTree = "<group>"; };
+		04EF60BD265B558F00302922 /* hots.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hots.json; sourceTree = "<group>"; };
 		09E49E208F5F760C16D59E12 /* Pods-Gank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank.release.xcconfig"; path = "Target Support Files/Pods-Gank/Pods-Gank.release.xcconfig"; sourceTree = "<group>"; };
 		2625374E8BD90FA2D0A4A90C /* Pods_Gank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A0DC86C12AD82FF5D65F89 /* Pods-Gank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank.debug.xcconfig"; path = "Target Support Files/Pods-Gank/Pods-Gank.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,28 +104,17 @@
 		04CC11AE2658F3E9005B87D1 /* Gank */ = {
 			isa = PBXGroup;
 			children = (
-				04EF6095265B38C000302922 /* CGFloat+FD.swift */,
+				04CC11C72658F6B9005B87D1 /* Article.swift */,
+				04EF60B7265B53FF00302922 /* Hot */,
+				04EF60B9265B544300302922 /* Category */,
+				04EF60B8265B541200302922 /* Girl */,
+				04EF60BA265B545E00302922 /* Extension */,
 				04CC11BE2658F3F4005B87D1 /* Gank.entitlements */,
 				04CC11AF2658F3E9005B87D1 /* GankApp.swift */,
 				04CC11B12658F3E9005B87D1 /* ContentView.swift */,
 				04CC11B32658F3ED005B87D1 /* Assets.xcassets */,
 				04CC11B82658F3ED005B87D1 /* Info.plist */,
 				04CC11B52658F3ED005B87D1 /* Preview Content */,
-				04CC11C12658F64D005B87D1 /* GirlView.swift */,
-				04CC11C32658F65E005B87D1 /* GirlListView.swift */,
-				04CC11C52658F697005B87D1 /* ModelData.swift */,
-				04CC11C72658F6B9005B87D1 /* Article.swift */,
-				04CC11C92658F6E2005B87D1 /* girls.json */,
-				04CC11CB2658F939005B87D1 /* GirlDetailView.swift */,
-				04EF6097265B41D500302922 /* category.json */,
-				04EF6099265B41FA00302922 /* CategoryView.swift */,
-				04EF609B265B420F00302922 /* CategoryListView.swift */,
-				04EF609D265B42CB00302922 /* CategoryDetailView.swift */,
-				04EF609F265B42E300302922 /* Category.swift */,
-				04EF60A1265B441600302922 /* articles_ios.json */,
-				04EF60A3265B447300302922 /* ArticleListView.swift */,
-				04EF60A5265B447F00302922 /* ArticleDetailView.swift */,
-				04EF60A7265B466D00302922 /* HotView.swift */,
 			);
 			path = Gank;
 			sourceTree = "<group>";
@@ -124,6 +125,55 @@
 				04CC11B62658F3ED005B87D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04EF60B7265B53FF00302922 /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				04EF60A7265B466D00302922 /* HotView.swift */,
+				04EF60B3265B51DF00302922 /* HotBannerView.swift */,
+				04EF60B4265B51DF00302922 /* HotBannerViewModel.swift */,
+				04EF60AD265B4A9100302922 /* Banner.swift */,
+				04EF60B1265B4D8000302922 /* banners.json */,
+				04EF60BB265B54DF00302922 /* HotListView.swift */,
+				04EF60BD265B558F00302922 /* hots.json */,
+			);
+			path = Hot;
+			sourceTree = "<group>";
+		};
+		04EF60B8265B541200302922 /* Girl */ = {
+			isa = PBXGroup;
+			children = (
+				04CC11C12658F64D005B87D1 /* GirlView.swift */,
+				04CC11C32658F65E005B87D1 /* GirlListView.swift */,
+				04CC11CB2658F939005B87D1 /* GirlDetailView.swift */,
+				04CC11C92658F6E2005B87D1 /* girls.json */,
+			);
+			path = Girl;
+			sourceTree = "<group>";
+		};
+		04EF60B9265B544300302922 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				04EF6099265B41FA00302922 /* CategoryView.swift */,
+				04EF609B265B420F00302922 /* CategoryListView.swift */,
+				04EF609D265B42CB00302922 /* CategoryDetailView.swift */,
+				04EF609F265B42E300302922 /* Category.swift */,
+				04EF6097265B41D500302922 /* category.json */,
+				04EF60A1265B441600302922 /* articles_ios.json */,
+				04EF60A3265B447300302922 /* ArticleListView.swift */,
+				04EF60A5265B447F00302922 /* ArticleDetailView.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		04EF60BA265B545E00302922 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04CC11C52658F697005B87D1 /* ModelData.swift */,
+				04EF6095265B38C000302922 /* CGFloat+FD.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C2B894CC3273FDA1BB463273 /* Pods */ = {
@@ -203,9 +253,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CC11B72658F3ED005B87D1 /* Preview Assets.xcassets in Resources */,
+				04EF60B2265B4D8000302922 /* banners.json in Resources */,
 				04CC11B42658F3ED005B87D1 /* Assets.xcassets in Resources */,
 				04EF60A2265B441600302922 /* articles_ios.json in Resources */,
 				04CC11CA2658F6E2005B87D1 /* girls.json in Resources */,
+				04EF60BE265B558F00302922 /* hots.json in Resources */,
 				04EF6098265B41D500302922 /* category.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,9 +319,13 @@
 				04EF60A8265B466D00302922 /* HotView.swift in Sources */,
 				04EF60A4265B447300302922 /* ArticleListView.swift in Sources */,
 				04EF609C265B420F00302922 /* CategoryListView.swift in Sources */,
+				04EF60B6265B51DF00302922 /* HotBannerViewModel.swift in Sources */,
 				04CC11CC2658F939005B87D1 /* GirlDetailView.swift in Sources */,
 				04CC11C62658F697005B87D1 /* ModelData.swift in Sources */,
+				04EF60BC265B54DF00302922 /* HotListView.swift in Sources */,
+				04EF60AE265B4A9100302922 /* Banner.swift in Sources */,
 				04CC11C22658F64D005B87D1 /* GirlView.swift in Sources */,
+				04EF60B5265B51DF00302922 /* HotBannerView.swift in Sources */,
 				04EF60A6265B447F00302922 /* ArticleDetailView.swift in Sources */,
 				04CC11C42658F65E005B87D1 /* GirlListView.swift in Sources */,
 				04EF609A265B41FA00302922 /* CategoryView.swift in Sources */,
